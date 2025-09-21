@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "audaki_cart_engine",
+  "version": "${version}",
+
+  "name": "Audaki Cart Engine",
+  "description": "Audaki Cart Engine: Improved & Faster Minecarts (Vanilla Carts, Balanced for Survival)",
+
+  "authors": [{
+    "name": "Audaki",
+    "contact": {
+      "twitter": "https://twitter.com/audaki_ra"
+    }
+  }],
+
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/audaki-cart-engine",
+    "sources": "https://github.com/audaki/minecraft-cart-engine",
+    "issues": "https://github.com/audaki/minecraft-cart-engine/issues",
+    "wiki": "https://github.com/audaki/minecraft-cart-engine/wiki"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/audaki_cart_engine/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "audaki.cart_engine.AceMod"
+    ]
+  },
+  "mixins": [
+    "audaki_cart_engine.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": ">=1.21.6 <=1.21.99",
+    "java": ">=17"
+  },
+  "suggests": {
+    "modmenu": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.wiki": "https://github.com/audaki/minecraft-cart-engine/wiki",
+        "modmenu.twitter": "https://twitter.com/audaki_ra",
+        "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/audaki-cart-engine"
+      }
+    }
+  }
+}
